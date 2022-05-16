@@ -1,0 +1,46 @@
+body {
+  height: 100vh;
+  background-color: rgb(224, 208, 208);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-auto-rows: minmax(auto, auto);
+}
+div {
+  background-color: tomato;
+  position: relative;
+  height: 300px;
+  width: 200px;
+  border: 5px solid white;
+  margin: 0px 10px;
+}
+
+div:nth-child(2) {
+  background-color: teal;
+}
+div:nth-child(3) {
+  background-color: burlywood;
+}
+div:nth-child(4) {
+  background-color: thistle;
+}
+div div {
+  height: 100px;
+  width: 192px;
+  background-color: white;
+  margin: 0px;
+  top: 20px;
+  position: absolute;
+}
+div > span {
+  position: relative;
+  font-size: 30px;
+  font-weight: bolder;
+}
+span + span {
+  display: block;
+  top: 30px;
+  font-size: 15px;
+  font-weight: bolder;
+}
